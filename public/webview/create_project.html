@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src *; img-src {{webview.cspSource}}; script-src {{webview.cspSource}}; style-src {{webview.cspSource}};"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>创建项目</title>
+        <link rel="stylesheet" type="text/css" href="{{styles/bootstrap.css}}" />
+        <link rel="stylesheet" type="text/css" href="{{styles/common.css}}" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm">
+                <div class="menus">
+                    <ul>
+                        <li>
+                            <div class="title">项目信息2</div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <label>项目名称：</label>
+                            <input class="form-control" name="name" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label>地址：</label>
+                            <div class="input-group">
+                                <input class="form-control" name="projectPath" id="projectPath" />
+                                <div class="input-group-addon cursor" id="openFolderDialog">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>项目类型</label>
+                            <select class="form-control" name="projectType" id="projectType">
+                                <!-- <option value="angular">Angular</option>
+                                <option value="react">React</option>
+                                <option value="vue">Vue</option>
+                                <option value="nodejs">node.js</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>模板</label>
+                            <select class="form-control" id="projectTmpls">
+                                <option value="empty">Empty</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="log" class="log"></div>
+        <script type="text/javascript" src="{{js/common.js}}"></script>
+    </body>
+</html>

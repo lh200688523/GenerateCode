@@ -1,0 +1,7 @@
+{
+    "angularTmplDownloadPath": "",
+    "reactTmplDownloadPath": "",
+    "vueTmplDownloadPath": "",
+    "tmplPath": "public/tmpls/",
+    "projectTypes": ["angular", "react", "vue", "nodejs"]
+}

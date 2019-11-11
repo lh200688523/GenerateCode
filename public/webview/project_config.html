@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- default-src 'none'; img-src ${webview.cspSource} https:; script-src ${webview.cspSource}; style-src ${webview.cspSource}; -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src {{webview.cspSource}}; script-src {{webview.cspSource}}; style-src {{webview.cspSource}};"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>项目配置</title>
+        <link rel="stylesheet" type="text/css" href="{{styles/bootstrap.css}}" />
+        <link rel="stylesheet" type="text/css" href="{{styles/common.css}}" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm">
+                <div class="menus">
+                    <ul>
+                        <li>
+                            <div class="title">基础配置<i class="arrow-down"></i></div>
+                            <ul>
+                                <li>模板地址</li>
+                            </ul>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <label>下载类型</label>
+                            <select class="form-control">
+                                <option value="http">Http</option>
+                                <option value="git">Git</option>
+                                <option value="svn">Svn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>angular 模板git地址：</label>
+                            <input class="form-control" name="projectName" id="projectName" />
+                        </div>
+                        <div class="form-group">
+                            <label>vue 模板git地址：</label>
+                            <input class="form-control" name="projectName" id="projectName" />
+                        </div>
+                        <div class="form-group">
+                            <label>vue 模板git地址：</label>
+                            <input class="form-control" name="projectName" id="projectName" />
+                        </div>
+                        <div class="form-group">
+                            <label>vue 模板git地址：</label>
+                            <input class="form-control" name="projectName" id="projectName" />
+                        </div>
+                        <div class="form-group">
+                            <label>模板保存地址：</label>
+                            <input class="form-control" name="projectName" id="projectName" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
